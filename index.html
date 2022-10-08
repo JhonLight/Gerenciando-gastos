@@ -9,17 +9,35 @@
     <title>Controle de gastos</title>
   </head>
   <body>
-    <main>
-      <form action="#">
-        <label for="email">Endereço de email</label>
-        <input type="email" id="email" />
-
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" />
-
-        <button type="button">Recuperar senha</button>
-        <input type="submit" value="Conecte-se" />
-        <a href="#">Registrar</a>
+    <main class="flex main">
+      <form class="flex form">
+        <label class="label" for="email">Endereço de email</label>
+        <input
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          onchange="validandoEmail()"
+          placeholder="Insira o seu endereço de email"
+        />
+        <label class="label" for="senha">Senha</label>
+        <input
+          class="input"
+          type="password"
+          name="sneha"
+          id="senha"
+          placeholder="Coloque sua senha"
+        />
+        <button class="btn-senha" type="button" disabled="true">
+          Recuperar senha
+        </button>
+        <input
+          class="btn-cadastro"
+          type="button"
+          value="Conecte-se"
+          disabled="true"
+        />
+        <a class="btn-registra" href="#">Registrar</a>
       </form>
     </main>
 
