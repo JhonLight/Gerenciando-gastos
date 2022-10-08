@@ -1,0 +1,87 @@
+body {
+  background-image: url(../img/Thumbnail.svg);
+  height: 100vh;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  line-height: 160%;
+  color: var(--cor-primaria);
+}
+
+:root {
+  --cor-primaria: #FFD34E;
+  --cor-secundaria: #7C5E98;
+  --cor-terciaria: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
+
+.main {
+  height: 100%;
+  width: 32%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  flex-direction: column;
+  gap: 20px;
+  width: 43.83vh;
+}
+
+.input {
+  width: 100%;
+  padding: 13px 20px 13px 16px;
+  border-radius: 12px;
+  background: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  border: none;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: var(--cor-terciaria);
+}
+
+.btn-senha {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.btn-cadastro {
+  background: none;
+  border-color: var(--cor-terciaria);
+  color: var(--cor-terciaria);
+  border-style: groove;
+  width: 100%;
+  padding: 13px 20px 13px 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-registra {
+  width: 100%;
+  padding: 11px 0px 11px 0px;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--cor-terciaria);
+  border-color: var(--cor-terciaria);
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px groove;
+}
+
+.btn-cadastro .btn-registra .btn-senha:active {
+  opacity: 0.8;
+  background: rgba(186, 21, 21, 0.5);
+}
+
+.btn-senha[disabled] {
+  background: yellow;
+}
